@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/Bootstrap@5.2.2/dist/css/Bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/Bootstrap@5.2.2/dist/js/Bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/Bootstrap@5.2.2/dist/js/Bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>  
+</head>  
+
+
+
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+       
+        </style>
+        
+        
+       
+        
+
+        
+
+    
+
+ </head>
+
+<body>
+
+
+    
+        <!-- <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>-->
+
+        <h2>Vendor List</h2>
+        <hr>
+        <div class="container jumbotron text">
+
+            <div class="card">
+                <div class="card-header">
+                    Vendor Report
+                </div>
+                <div class="class-body">
+
+        <hr>
+
+
+        <div class="row">
+            <div class="col-sm-5">
+                <label>Choose From Date</label> <br>
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                    <input placeholder="Select date" type="date" id="example" class="form-control">
+
+                    <i class="fas fa-calendar input-prefix"></i>
+                </div>
+
+
+
+
+
+                <!--<div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+  </div>
+</div>-->
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <label>Choose To Date</label> <br>
+                    <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker"
+                        inline="true">
+                        <input placeholder="Select date" type="date" id="example" class="form-control">
+
+                        <i class="fas fa-calendar input-prefix"></i>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col">
+                <div class="col-sm-5"><br>
+                    <label>Vendor Name</label><br>
+
+                    <div id="vendor name" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                        <input placeholder="Enter Vendor Name" type="text" id="example" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="col-sm-5"><br>
+                    
+                        <label for="sel1">Approval Status</label><br>
+                        <div class="form-group">
+                        <select class="form-control" id="sel1">
+                            <option selected>Select Status</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    
+        <button type="button"   class="btn btn-primary" >Search</button>
+        <button type="button" class="btn btn-primary">Reset</button>
+
+       <!-- <div class="position-absolute bottom-right"> 
+            <button type="button" class="btn btn-primary">Search</button> 
+        </div>-->
+
+        <!--<div class="mb-3">
+            <label for="searchInput" class="form-label">Search</label>
+            <input type="text" class="form-control" id="searchInput">
+          </div>-->
+
+        </div>
+          
+    </div>
+    </div><br><br>
+
+    <div class="container jumbotron text">
+
+        <!--<div class="container jumbotron text">-->
+            <!--<span class="border"> <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div></span>-->
+            <div class="card">
+                <div class="card-header">
+                    
+                </div>
+                <div class="class-body">
+            <div class="row">
+                <div class="col-3">
+                <div class="bg-white  p-2 border border-success rounded shadow-lg">
+                    <table class="m-0 table table-success table-stripe">
+                        <thead>
+                            <tr>
+
+                                <th>Vendor Name</th>
+                                <th>Vendor Id</th>
+                                <th> Contact Person</th>
+                                <th>Mobile Number</th>
+                                <th>Is Approved</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1 Pay MobileWare Pvt. Ltd</td>
+                                <td>349</td>
+                                <td>Hemlata Kumari</td>
+                                <td>1234567890</td>
+                                <td>Pending for Approval</td>
+                                <td><a href="url"><i class="bi bi-eye">Eye</i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>2 Pay MobileWare Pvt. Ltd</td>
+                                <td>344</td>
+                                <td>Kumari</td>
+                                <td>1234567234</td>
+                                <td>Pending for Approval</td>
+                                <td><a href="url"><i class="bi bi-eye">Eye</i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>3 Pay MobileWare Pvt. Ltd</td>
+                                <td>345</td>
+                                <td>Sonali</td>
+                                <td>12345678670</td>
+                                <td>Pending for Approval</td>
+                                <td><a href="url"><i class="bi bi-eye">Eye</i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+</div>
+            
+        </div>
+        </div>
+
+
+
+
+        
+        
+
+</body>
+
+</html>
